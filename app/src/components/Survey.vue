@@ -71,14 +71,16 @@ export default {
     return {
       showConfirmation: false,
       valid: true,
-      survey: null,
+      survey: {
+        title: 'Sample title',
+      },
       questions: [
         {
           id: Date.now()+1,
-          text: "Sample Question",
-          options: ['Option 1','Option 2','Option 3','Option 4'],
+          text: "What is your favourite activity",
+          options: ['Hulahoop Challenge','Mask invasion','Pitch Workshop','Business Model Canvas'],
           readonly: true,
-        },
+        }
       ],
     };
   },
