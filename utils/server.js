@@ -35,6 +35,7 @@ server.get('/explorer', async (req, res) => {
 });
 
 server.get('/getSurveyIds', async (req, res) => {
+  console.log(TrackerAddresses.last())
   const trackerContract = await getTracker(
     interface,
     bytecode,
