@@ -71,28 +71,14 @@ export default {
     return {
       showConfirmation: false,
       valid: true,
-      survey: {
-        title: 'Angelhack 2019 Post Event Survey',
-      },
+      survey: null,
       questions: [
         {
           id: Date.now()+1,
-          text: "What is your favourite activity",
-          options: ['Hulahoop Challenge','Mask invasion','Pitch Workshop','Business Model Canvas'],
+          text: "Sample Question",
+          options: ['Option 1','Option 2','Option 3','Option 4'],
           readonly: true,
         },
-        {
-          id: Date.now()+3,
-          text: 'Who is the most attractive :)',
-          options: ['Jonas for sure','Jasmine obviously','Nicole Upchurch duh?','of course Chirag Batra'],
-          readonly: true,
-        },
-        {
-          id: Date.now()+2,
-          text: 'Which Sponsor is your favorite?',
-          options: ['Angelhack','Grab','Centrality ','IBM'],
-          readonly: true,
-        }
       ],
     };
   },
